@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.m */; };
+		7E0ED83F150E615C00611FDC /* DiracAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED839150E615C00611FDC /* DiracAudioPlayer.mm */; };
+		7E0ED840150E615C00611FDC /* DiracAudioPlayerBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED83B150E615C00611FDC /* DiracAudioPlayerBase.mm */; };
+		7E0ED841150E615C00611FDC /* DiracFxAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED83D150E615C00611FDC /* DiracFxAudioPlayer.mm */; };
+		7E33952413410E010097B968 /* SMB2MasterDspS.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7E33952313410E010097B968 /* SMB2MasterDspS.caf */; };
+		7E41F994133CE8830076F1B3 /* DiracAudioPlayerExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E41F992133CE8830076F1B3 /* DiracAudioPlayerExampleViewController.xib */; };
+		7E970AEA133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E970AE9133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.m */; };
+		7E970B03133CE4EC0035BB34 /* EAFRead.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E970AFB133CE4EC0035BB34 /* EAFRead.mm */; };
+		7E970B04133CE4EC0035BB34 /* EAFWrite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E970AFD133CE4EC0035BB34 /* EAFWrite.mm */; };
+		7E970B06133CE4EC0035BB34 /* Utilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E970B01133CE4EC0035BB34 /* Utilities.mm */; };
+		7E970B0B133CE5180035BB34 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E970B0A133CE5180035BB34 /* Accelerate.framework */; };
+		7E970B0D133CE5180035BB34 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E970B0C133CE5180035BB34 /* AudioToolbox.framework */; };
+		7E970B0F133CE5180035BB34 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E970B0E133CE5180035BB34 /* AudioUnit.framework */; };
+		7E970B11133CE5180035BB34 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E970B10133CE5180035BB34 /* CoreAudio.framework */; };
+		7E970B13133CE5180035BB34 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E970B12133CE5180035BB34 /* CoreAudioKit.framework */; };
+		7ED50AB6166512AD003C6E66 /* libDiracLE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED50AB5166512AD003C6E66 /* libDiracLE.a */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiracAudioPlayerExampleAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiracAudioPlayerExampleAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* DiracAudioPlayerExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiracAudioPlayerExample_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7E0ED837150E615C00611FDC /*  DiracAudioPlayer ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = " DiracAudioPlayer ReadMe.rtf"; path = "../../Common Files/DiracAudioPlayer/ DiracAudioPlayer ReadMe.rtf"; sourceTree = "<group>"; };
+		7E0ED838150E615C00611FDC /* DiracAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DiracAudioPlayer.h; sourceTree = "<group>"; };
+		7E0ED839150E615C00611FDC /* DiracAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = DiracAudioPlayer.mm; sourceTree = "<group>"; };
+		7E0ED83A150E615C00611FDC /* DiracAudioPlayerBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DiracAudioPlayerBase.h; sourceTree = "<group>"; };
+		7E0ED83B150E615C00611FDC /* DiracAudioPlayerBase.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = DiracAudioPlayerBase.mm; sourceTree = "<group>"; };
+		7E0ED83C150E615C00611FDC /* DiracFxAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DiracFxAudioPlayer.h; sourceTree = "<group>"; };
+		7E0ED83D150E615C00611FDC /* DiracFxAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = DiracFxAudioPlayer.mm; sourceTree = "<group>"; };
+		7E33952313410E010097B968 /* SMB2MasterDspS.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SMB2MasterDspS.caf; path = ../../SMB2MasterDspS.caf; sourceTree = SOURCE_ROOT; };
+		7E41F993133CE8830076F1B3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DiracAudioPlayerExampleViewController.xib; sourceTree = "<group>"; };
+		7E970AE8133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiracAudioPlayerExampleViewController.h; sourceTree = "<group>"; };
+		7E970AE9133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiracAudioPlayerExampleViewController.m; sourceTree = "<group>"; };
+		7E970AFA133CE4EC0035BB34 /* EAFRead.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EAFRead.h; sourceTree = "<group>"; };
+		7E970AFB133CE4EC0035BB34 /* EAFRead.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = EAFRead.mm; sourceTree = "<group>"; };
+		7E970AFC133CE4EC0035BB34 /* EAFWrite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EAFWrite.h; sourceTree = "<group>"; };
+		7E970AFD133CE4EC0035BB34 /* EAFWrite.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = EAFWrite.mm; sourceTree = "<group>"; };
+		7E970B00133CE4EC0035BB34 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		7E970B01133CE4EC0035BB34 /* Utilities.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = Utilities.mm; sourceTree = "<group>"; };
+		7E970B02133CE4EC0035BB34 /* Dirac.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Dirac.h; path = "../../Common Files/Dirac.h"; sourceTree = SOURCE_ROOT; };
+		7E970B0A133CE5180035BB34 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7E970B0C133CE5180035BB34 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7E970B0E133CE5180035BB34 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		7E970B10133CE5180035BB34 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		7E970B12133CE5180035BB34 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		7ED50AB5166512AD003C6E66 /* libDiracLE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDiracLE.a; path = "../../Common Files/libDiracLE.a"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* DiracAudioPlayerExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DiracAudioPlayerExample-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* DiracAudioPlayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiracAudioPlayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7E970B0B133CE5180035BB34 /* Accelerate.framework in Frameworks */,
+				7E970B0D133CE5180035BB34 /* AudioToolbox.framework in Frameworks */,
+				7E970B0F133CE5180035BB34 /* AudioUnit.framework in Frameworks */,
+				7E970B11133CE5180035BB34 /* CoreAudio.framework in Frameworks */,
+				7E970B13133CE5180035BB34 /* CoreAudioKit.framework in Frameworks */,
+				7ED50AB6166512AD003C6E66 /* libDiracLE.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.m */,
+				7E970AE8133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.h */,
+				7E970AE9133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				7E970B0A133CE5180035BB34 /* Accelerate.framework */,
+				7E970B0C133CE5180035BB34 /* AudioToolbox.framework */,
+				7E970B0E133CE5180035BB34 /* AudioUnit.framework */,
+				7E970B10133CE5180035BB34 /* CoreAudio.framework */,
+				7E970B12133CE5180035BB34 /* CoreAudioKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* DiracAudioPlayerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* DiracAudioPlayerExample */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED837150E615C00611FDC /*  DiracAudioPlayer ReadMe.rtf */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = DiracAudioPlayerExample;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED836150E615C00611FDC /* DiracAudioPlayer */,
+				7E970AF9133CE4EC0035BB34 /* ExtAudioFile */,
+				7E970AFF133CE4EC0035BB34 /* util */,
+				7E970B02133CE4EC0035BB34 /* Dirac.h */,
+				7ED50AB5166512AD003C6E66 /* libDiracLE.a */,
+				256AC3F00F4B6AF500CF3369 /* DiracAudioPlayerExample_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E33952313410E010097B968 /* SMB2MasterDspS.caf */,
+				7E41F992133CE8830076F1B3 /* DiracAudioPlayerExampleViewController.xib */,
+				8D1107310486CEB800E47090 /* DiracAudioPlayerExample-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0ED836150E615C00611FDC /* DiracAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED838150E615C00611FDC /* DiracAudioPlayer.h */,
+				7E0ED839150E615C00611FDC /* DiracAudioPlayer.mm */,
+				7E0ED83A150E615C00611FDC /* DiracAudioPlayerBase.h */,
+				7E0ED83B150E615C00611FDC /* DiracAudioPlayerBase.mm */,
+				7E0ED83C150E615C00611FDC /* DiracFxAudioPlayer.h */,
+				7E0ED83D150E615C00611FDC /* DiracFxAudioPlayer.mm */,
+			);
+			name = DiracAudioPlayer;
+			path = "../../Common Files/DiracAudioPlayer";
+			sourceTree = SOURCE_ROOT;
+		};
+		7E970AF9133CE4EC0035BB34 /* ExtAudioFile */ = {
+			isa = PBXGroup;
+			children = (
+				7E970AFA133CE4EC0035BB34 /* EAFRead.h */,
+				7E970AFB133CE4EC0035BB34 /* EAFRead.mm */,
+				7E970AFC133CE4EC0035BB34 /* EAFWrite.h */,
+				7E970AFD133CE4EC0035BB34 /* EAFWrite.mm */,
+			);
+			name = ExtAudioFile;
+			path = "../../Common Files/ExtAudioFile";
+			sourceTree = SOURCE_ROOT;
+		};
+		7E970AFF133CE4EC0035BB34 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7E970B00133CE4EC0035BB34 /* Utilities.h */,
+				7E970B01133CE4EC0035BB34 /* Utilities.mm */,
+			);
+			name = util;
+			path = "../../Common Files/util";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* DiracAudioPlayerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DiracAudioPlayerExample" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiracAudioPlayerExample;
+			productInstallPath = "$(HOME)/Applications";
+			productName = DiracAudioPlayerExample;
+			productReference = 8D1107320486CEB800E47090 /* DiracAudioPlayerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DiracAudioPlayerExample" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* DiracAudioPlayerExample */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* DiracAudioPlayerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				7E41F994133CE8830076F1B3 /* DiracAudioPlayerExampleViewController.xib in Resources */,
+				7E33952413410E010097B968 /* SMB2MasterDspS.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* DiracAudioPlayerExampleAppDelegate.m in Sources */,
+				7E970AEA133CE38E0035BB34 /* DiracAudioPlayerExampleViewController.m in Sources */,
+				7E970B03133CE4EC0035BB34 /* EAFRead.mm in Sources */,
+				7E970B04133CE4EC0035BB34 /* EAFWrite.mm in Sources */,
+				7E970B06133CE4EC0035BB34 /* Utilities.mm in Sources */,
+				7E0ED83F150E615C00611FDC /* DiracAudioPlayer.mm in Sources */,
+				7E0ED840150E615C00611FDC /* DiracAudioPlayerBase.mm in Sources */,
+				7E0ED841150E615C00611FDC /* DiracFxAudioPlayer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7E41F992133CE8830076F1B3 /* DiracAudioPlayerExampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E41F993133CE8830076F1B3 /* English */,
+			);
+			name = DiracAudioPlayerExampleViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DiracAudioPlayerExample_Prefix.pch;
+				INFOPLIST_FILE = "DiracAudioPlayerExample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Common Files\"",
+				);
+				PRODUCT_NAME = DiracAudioPlayerExample;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DiracAudioPlayerExample_Prefix.pch;
+				INFOPLIST_FILE = "DiracAudioPlayerExample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Common Files\"",
+				);
+				PRODUCT_NAME = DiracAudioPlayerExample;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DiracAudioPlayerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DiracAudioPlayerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

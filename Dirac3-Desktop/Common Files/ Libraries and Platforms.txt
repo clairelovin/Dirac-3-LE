@@ -1,0 +1,11 @@
+
+Following are the libraries and their respective platforms that are located in the "Common Files" folder:
+
+DiracLE.lib - 32bit Microsoft Visual C6+ on Windows. Note that the DLL format DiracLE.dll is deprecated as of version 3.5.5
+
+libDiracLE.a - PPC/Intel 32/64bit MacOS X gcc/Xcode
+
+--
+
+Linux libraries are in "Dirac3 Desktop/Linux"
+

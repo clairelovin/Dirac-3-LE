@@ -1,0 +1,103 @@
+Version History
+
+Dirac 3.0.0
+-----------
+* First release
+
+Dirac 3.0.1
+-----------
+* Fixed #defines to be able to build the LE version
+* Effect mode in DiracRetune was always on when creating a DiracRetune instance using DiracCreate. It is now off by default, as it should be
+* Fixed QMF phase lock code branch error in LE that caused excessive noise in the output
+* Fixed memory overrun that could cause a crash on non-accelerated builds
+
+Dirac 3.0.2
+-----------
+* Removed stray printf statement
+* Code cleanup
+* Added Linux build
+
+Dirac 3.0.3
+-----------
+* Added missing DiracErrorToString() declaration to Dirac.h
+* Added DiracPrintSettings(). This function outputs all settings of a Dirac instance to the console
+
+Dirac 3.1.0
+-----------
+* Added missing ppc64 architecture to MacOS X build
+* DiracRetune now allows getting and setting of the fundamental frequency (setting it is not supported in LE)
+* Added new kDiracPropertyUseConstantCpuPitchShift property that allows enabling constant CPU load pitch shifting. This affects all modes that support pitch shifting (kDiracLambda1-5, kDiracTranscribe). In previous versions, raising the pitch would increase CPU load proportionally. Note that this property has some impact on quality when upshifting pitch so it is off by default and its use should be strictly limited to realtime processing/previewing.
+
+Dirac 3.2.0
+-----------
+* [MacOS X][iOS]: Improved performance of vectorized code for kDiracLambdaPreview and kDiracLambdaTranscribe
+* [iOS]: Compiled against latest iOS 4.2 SDK
+* [iOS]: Removed unsupported UNIX symbol that caused the linker to fail when compiling for simulator target
+* Improved speed of formant correction, up to 2.4x on vector-enabled platforms
+* kDiracPropertyUseConstantCpuPitchShift in combination with kDiracLambdaTranscribe could cause unexpected results
+* fixed crash with kDiracLambdaTranscribe and sample rates other than 22.05kHz and 44.1kHz
+* fixed gain change when using kDiracLambdaTranscribe
+* Removed cache warning messages
+* Fixed formatting error in parameter output when using DiracPrintSettings()
+* Optimized memory footprint when using kDiracLambdaTranscribe
+* Introduced kDiracPropertyCacheMaxSizeFrames and kDiracPropertyCacheNumFramesLeftInCache property constants
+* Added cross platform time measurement utilities, DiracStartClock() and DiracClockTimeSeconds() to keep the example projects more readable
+* Added CPU usage measurement tools (DiracPeakCpuUsagePercent())
+
+Dirac 3.2.5
+-----------
+* Fixed crash when using kDiracLambdaTranscribe/kDiracQualityPreview
+* Fixed crash with certain time and pitch settings
+* kDiracLambdaTranscribe now respects clear flag when using DiracReset()
+* [iOS]: Fixed issues with iOS 4.3 SDK
+* [iOS][MacOS X]: Added realtime playback example
+* [MacOS X]: Added compatibility with Xcode 4 
+
+Dirac 3.5.0
+-----------
+* Fixed volume issue when switching compact support
+* Added DiracFx API
+* Added iOS 5 compatibility
+* Optimized TF framework
+* Removed DiracRetune support through Dirac core API
+* Revisited DiracRetune, now sample rate independent
+* Added SetProcessingBeganCallback
+* Removed ProcessWithUserData calls
+* Optimized sample rate conversion (scaled by quality)
+* Updated documentation
+
+Dirac 3.5.2
+-----------
+* In DiracFx the “clear” flag now also clears the input queue
+* kDiracLambdaTranscribe now correctly reproduces the first block of audio 
+* Fixed problem with accelerated version of log2()
+* Minor fixes and optimizations
+
+Dirac 3.5.4
+-----------
+* Added property kDiracPropertyOutputGainDb to Dirac core
+* Changed DiracFxOutputBufferFramesRequired to DiracFxMaxOutputBufferFramesRequired (name change only)
+* Added DiracFxOutputBufferFramesRequiredNextCall
+* Removed extraneous buffer when using transcribe mode
+* Increased long term precision when doing pitch shifting
+* Added DiracRetuneLatencyFrames()
+* Setting a tuning table (both classic and DiracRetune) with numFrequencies < 0 causes pitch correction to be switched off. This can be used as a quick means to bypass processing. NOTE that this call is deprecated for DiracRetune.
+* Minor bug fixes
+
+Dirac 3.5.5
+-----------
+* Made DiracFx more reliable when releasing instance
+* Minor bug fixes
+* Added DiracCLI projects
+* DiracLE is now no longer distributed as a DLL on Windows
+* Implemented -setCurrentTime in DiracAudioPlayer class
+
+Dirac 3.5.8
+-----------
+* Instantiating Dirac under low memory conditions no longer causes an intermittent exception on mobile devices
+* Fixed a quality related bug in DiracFx
+* Added Dirac iPod Library player project
+* Added armv7s architecture to iOS version
+* Removed some of the LE demo restrictions and added 64bit support for LE on the Mac
+* Improved helper classes on Apple platforms to support MPMediaItem access
+* Minor bug fixes

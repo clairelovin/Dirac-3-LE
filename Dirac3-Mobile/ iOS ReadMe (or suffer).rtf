@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red203\green0\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12220\viewh13160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 \
+
+\fs30 Note on including DIRAC into your iOS project
+\b0\fs24 \
+\
+If you wish to use DIRAC within your own iPhone/iPad project you need to change the extension of the source file(s) that contain the DIRAC calls from .m to .mm. If you don't do this you will get some cryptic link errors because the linker isn't linking against the C++ standard libraries and headers.\
+\
+\
+
+\b\fs30 Library versions:\
+
+\b0\fs24 \
+
+\b libDIRAC_iOS4_*-fat\
+
+\b0 Includes code for iOS4.x for armv6, armv7 and i386. This library is deprecated and will be removed in a future version of the SDK.\
+\
+
+\b libDIRAC_iOS-fat\
+
+\b0 If you intend on targeting iOS 5 or higher (or a device that requires armv7s code) we recommend you use this variant of the library. This version includes code for armv7, armv7s and i386. It does no longer contain code for armv6 platforms, since Apple has discontinued their support with Xcode 4.5 / iOS 6.\
+\
+\cf2 Note that this library will crash on the device when used with projects compiled on 10.6.8 / iOS 4.x SDK. Please use "libDIRAC_iOS4_*-fat" on this platform instead.\
+\cf0 \
+In both cases please be sure to also include the Accelerate framework into your project.\
+\
+\
+
+\b\fs30 Note on file format/CODEC support\
+
+\b0\fs24 \
+\pard\pardeftab720\ql\qnatural
+\cf0 Dirac itself does not have a notion of file formats and CODECs. It sees audio as an inifinite stream of float values. For the purpose of running the iPhone version we have included two classes for reading and writing sound files based on the Apple ExtAudioFile API. By default, these classes are configured to read/write files in uncompressed AIFF format, but they also support CAF files, as well as reading from MPMediaItems. You will have to make some modifications to the sources to access CAF files. For details on reading from a MPMediaItem please check out the relevant demo project.\
+\
+For more information on the MPMedia/ExtAudioFile API we recommend the Apple CoreAudio mailing list at http://lists.apple.com/mailman/listinfo/coreaudio-api\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+--\
+\
+If you have any questions please contact me via email at smb@dspdimension.com\
+\
+}
